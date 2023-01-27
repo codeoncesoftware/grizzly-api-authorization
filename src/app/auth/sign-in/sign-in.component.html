@@ -1,0 +1,97 @@
+<div class="page-auth">
+  <div class="main-body">
+    <br><br>
+    <div class="card card-white">
+      <h4 style="text-align: center">
+        <span translate>auth.signin.title</span>
+        <div style="float: right; position: absolute; right: 0; top: 0">
+          <button mat-button [matMenuTriggerFor]="menu" class="md-button header-btn">
+            <span *ngIf="!isFr" class="flag-icon flag-icon-fr"> </span><span *ngIf="isFr"
+              class="flag-icon flag-icon-gb"></span>
+            {{selectedLanguage}}</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item *ngIf="isFr" (click)="setLang('fr')"><span class="flag-icon flag-icon-fr"></span>
+              FR</button>
+            <button mat-menu-item *ngIf="!isFr" (click)="setLang('en')"><span class="flag-icon flag-icon-gb"></span>
+              EN</button>
+          </mat-menu>
+        </div>
+      </h4>
+
+      <div class="card-content">
+
+
+        <form name="form" (ngSubmit)="ffLogin.form.valid" #ffLogin="ngForm">
+          <div *ngIf="!resetPasswordBool">
+            <div class="form-group">
+              <mat-form-field class="full-width">
+                <input required matInput type="email" name="email" placeholder="Email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" [(ngModel)]="email" autofocus>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field class="full-width">
+                <input required matInput type="password" name="pass"
+                  placeholder="{{ 'auth.signin.placeholder.password' | translate}}" [(ngModel)]="pass">
+              </mat-form-field>
+            </div>
+          </div>
+          <div *ngIf="resetPasswordBool && !successfulReset">
+            <div class="form-group" *ngIf="resetPasswordBool">
+              <p><span translate>auth.signin.errors.email</span></p>
+              <mat-form-field class="full-width">
+                <input required matInput type="email" name="email" placeholder="Email"
+                  [(ngModel)]="emailToSendResetPass" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" autofocus>
+                <mat-icon matSuffix class="material-icons">mail_outline</mat-icon>
+              </mat-form-field>
+
+            </div>
+          </div>
+          <div class="alert alert-danger" role="alert" *ngIf="!logged && !successfulReset && !resetPasswordBool">
+            <span translate>{{errorMessage}}</span>
+          </div>
+
+          <div class="alert alert-danger" role="alert" *ngIf="resetErrorMessage">
+            <span translate>auth.reset.errors.notFound</span>
+          </div>
+
+          <div class="divider divider-md"></div>
+
+          <a class="primaryColor" [routerLink]="" *ngIf="!resetPasswordBool" (click)="showResetPassword()"><span
+              translate>auth.signin.forgotPass</span></a>
+
+          <button mat-raised-button type="submit" color="primary" (click)="login()" class="float-right"
+            [disabled]="ffLogin.form.invalid" *ngIf="!resetPasswordBool"><span translate>auth.signin.btn</span></button>
+
+          <button mat-raised-button type="submit" color="primary" (click)="resetPassword()" class="float-right"
+            [disabled]="ffLogin.form.invalid" *ngIf="resetPasswordBool && !successfulReset"><span
+              translate>auth.signin.reset</span></button>
+
+        </form>
+        <div class="alert alert-success" role="alert" *ngIf="successfulReset">
+          <span translate>auth.signin.errors.checkEmail</span>
+        </div>
+
+        
+        <br><br>
+
+        <div *ngIf="showEditorButton" style="text-align: center;">
+
+        </div>
+
+
+        <div class="divider divider-md"></div>
+
+        <div class="additional-info">
+          <span translate>auth.signin.account</span> <a [routerLink]="['/sign-up']"><span
+              translate>auth.signin.signup</span></a>
+          <span *ngIf="resetPasswordBool">&nbsp; | &nbsp;</span>
+          <a *ngIf="resetPasswordBool" [routerLink]="['/login']" (click)="showResetPassword()"><span
+              translate>auth.signin.btn</span></a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

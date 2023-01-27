@@ -1,0 +1,820 @@
+{
+    "sidenav": {
+        "microservices": "Microservices",
+        "home": "Home",
+        "organization": "Organization"
+    },
+    "dashboard": {
+        "homeMsg": "Find and Subscribe to your Favourite Microservice",
+        "searchMsg": "Search for Microservices"
+    },
+    "organization": {
+        "notUser": "is not a user. We sent him an email to complete his registration.",
+        "alreadyAssigned": "is already assigned to an organization.",
+        "noTeams": "has no teams created yet.",
+        "membersTitle": "Members",
+        "teams": "Teams",
+        "invite": "Invite",
+        "add": "Add",
+        "delete": "Delete",
+        "save": "Save",
+        "edit": "Edit",
+        "members": "Organization Members",
+        "member": {
+            "invite": "Invite Members",
+            "msg": "Invite members to join this Organization by email. To invite multiple Members, separate each with a comma."
+        },
+        "adminNote": "Each organization must have at least one Admin",
+        "inviteFormat": "Press enter or , to confirm the selection."
+    },
+    "team": {
+        "team": "Team",
+        "create": "Create Team",
+        "created": "Created",
+        "invite": "Invite",
+        "add": "Add",
+        "delete": "Delete",
+        "edit": "Edit",
+        "members": "Team Members",
+        "member": {
+            "invite": "Add Members to a Team",
+            "msg": "Invite members to join this Team by email. Separate each with a comma."
+        },
+        "warning": "You can only add users from your organization."
+    },
+    "subscription": {
+        "subscribe": "Subscribe",
+        "unsubscribe": "Unsubscribe",
+        "subscribed": "Subscribed",
+        "subscription": "Subscription",
+        "details": "Subscription details",
+        "environment": "Choose an environment",
+        "frequency": "How often do you want to be notified",
+        "frequencyOptions": {
+            "weekly": "Weekly",
+            "daily": "Daily",
+            "hourly": "Hourly",
+            "instantly": "Instantly"
+        },
+        "changes": "What changes would you like to be notified of",
+        "changesOptions": {
+            "endpoint": "Endpoints",
+            "params": "Parameters",
+            "responses": "Responses",
+            "code": "Codes"
+        },
+        "email": {
+            "message": "Do you want to receive notifications via email?",
+            "yes": "Yes",
+            "no": "No"
+        }
+    },
+    "microservice": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "required": "This field is required.",
+        "req": "This field is required.",
+        "letters": "Please enter letters or numbers only.",
+        "64": "Please enter at least 64 characters.",
+        "lastUpdate": "Last Update",
+        "noDescription": "Please add a description to your microservice.",
+        "limit": "You've reached the limit for creating microservices",
+        "share": "Share",
+        "shareDetails": "Share",
+        "creationDate": "Creation Date",
+        "copy": "Copy URL",
+        "copied": "Copied to clipboard",
+        "shareCondition": "A team is needed in order to share your microservice."
+    },
+    "container": {
+        "compare": "Compare",
+        "download": "Download",
+        "title": "Swaggers",
+        "add": "Add",
+        "clone": "Clone",
+        "import": "Import",
+        "edit": "Edit",
+        "delete": "Delete",
+        "deleteAll": "Delete All Versions",
+        "creationTime": "Creation Time",
+        "lastUpdate": "Last Update",
+        "enable": "Enable Version",
+        "noContainers": "No version to display.",
+        "showFiles": "Show All resources",
+        "actions": "Version",
+        "export": "Export",
+        "load": "Load Swagger",
+        "publish": "Publish Swagger",
+        "file": "File",
+        "swagger": "Validate and Publish",
+        "history" : "History",
+        "historyOf" : " {{ env }} History",
+        "deleteCondition" : "A microservice must have at least one swagger.",
+        "transformationDesc": "For any transformation Endpoint, you need to define a parameter in 'Body' named 'Body' which will contain the content of the template."
+    },
+    "auth": {
+        "authentication": "Authentication",
+        "signin": {
+            "title": "SIGN IN",
+            "placeholder": {
+                "email": "Email",
+                "password": "Password"
+            },
+            "account": "You don't have an account? ",
+            "errors": {
+                "email": "Please enter the associated email with your Grizzly account.",
+                "credentials": "The credentials are not valid.",
+                "validAccount": "Your account is not activated Yet ! \nPlease Check your email or ask for a new Confirmation link.",
+                "checkEmail": "Check your Email addess to reset your password."
+            },
+            "reset": "Reset Password",
+            "btn": "Login",
+            "signup": "Sign Up",
+            "forgotPass": "Forgot Password ?"
+        },
+        "signup": {
+            "title": "SIGN UP",
+            "placeholder": {
+                "firstName": "First Name",
+                "lastName": "Last Name",
+                "email": "Email",
+                "password": "Password",
+                "confirmPassword": "Confirm Password",
+                "phone": "Phone",
+                "organisation": "Organisation"
+            },
+            "terms": "By signing up for Grizzly Hub you agree to our Terms of Use ",
+            "readTerms": "Terms of Use",
+            "termsOfUse": {
+                "title": "Terms of Use",
+                "presentation": "This policy describes the information we process for the operation of Grizzly Hub.",
+                "generalization": {
+                    "title": "1. Overview",
+                    "body": "Our community bylaw is designed to ensure that our community remains protected. They define what is allowed and not allowed on Grizzly Hub and apply to all types of content on our platform. "
+                },
+                "acceptance": {
+                    "title": "2. Acceptance of Terms and Conditions",
+                    "body": {
+                        "partOne": "2.1. By registering to use Grizzly Hub, accessing the Service or providing access to APIs through the Service, you agree and acknowledge that you have read all the terms and conditions of these Terms, understand all the terms and conditions of these Terms, and agree to be legally bound by all the terms and conditions of these Terms.",
+                        "partTwo": "2.2. The Effective Date of these Terms is the date on which you first access the Service."
+                    }
+                },
+                "updates": {
+                    "title": "3. Terms and Conditions updates",
+                    "body": {
+                        "partOne": "3.1 Grizzly Hub reserves the right to modify the Terms from time to time, for example to adapt them to changes in laws and regulations, or to change the functionality offered as part of the Service, at its sole discretion by giving notice that these Terms have been modified. Such notice may be provided by sending an e-mail, by posting a notice on the Site, by posting the revised Terms on the Site and revising the date at the top of these Terms, or by any other form of notice as determined by Grizzly Hub.",
+                        "partTwo": "You are advised to review these Terms each time you access the Service and at least every 30 days to ensure that you understand the terms and conditions that will apply to your use of the Service."
+                    }
+                },
+                "accounts": {
+                    "title": "4. Grizzly Hub Account",
+                    "body": {
+                        "partOne": "4.1 To access the features of Grizzly Hub you must create a Grizzly Hub account. When you create your account, you must provide complete and accurate information. Please ensure that your password is kept secure and confidential.",
+                        "partTwo":  "4.2 You are responsible for protecting the passwords you use to access the Service and agree to be fully responsible for all activities or transactions that occur under your Grizzly Hub account or password. You must notify Grizzly Hub immediately if you become aware of any unauthorized use of your Grizzly Hub account or password."
+                    }
+                },
+                "restriction": {
+                    "title": "5.Restrictions",
+                    "body": {
+                        "partOne": "4.1 Do not post content on Grizzly Hub if it is intended to sell, link to, or facilitate access to any of the regulated goods and services listed below. You may not enable the sale of these items or facilitate the use of these services by posting links, e-mails, a phone number or any other means to contact a seller directly : ",
+                        "partTwo" : {
+                            "msg1" : "Bank accounts, stolen credit cards or other financial information",
+                            "msg2" : "Counterfeit documents or money",
+                            "msg3" : "Narcotics and other controlled drugs",
+                            "msg4" : "Explosives",
+                            "msg5" : "Organs",
+                            "msg6" : "Endangered species or parts of endangered species",
+                            "msg7" : "Firearms and certain firearm accessories ",
+                            "msg8" : "Sexual or escort services ",
+                            "msg9" : "Unlicensed medical services",
+                            "msg10" : "Trafficking in human beings",
+                            "msg11" : "Non-prescription pharmaceutical products"
+
+                        }
+                        
+                    }
+                },
+                "copyright": {
+                    "title": "6. COPYRIGHT POLICY",
+                    "body": "Grizzly Hub users may report content that appears on / via the platform to Grizzly Hub that it believes violates these Terms, and Grizzly Hub may remove such content, suspend or terminate the account of the user who posted such content and / or take action to enforce these Terms against such user."
+                },
+                "communication": {
+                    "title": "7. Electronic Communications",
+                    "body":"By using the Service, you agree that we may communicate with you electronically regarding your use of the Service and that all notices, agreements, disclosures or other communications that we send to you electronically satisfy all legal requirements for communication. To withdraw your consent to receive electronic notice, please notify us at support@codeonce.fr or contact@codeonce.fr"
+                },
+                "question": {
+                    "title": "8. QUESTIONS",
+                    "body": "If you have any questions regarding the use of the platform, please send an e-mail to support@codeonce.fr or contact@codeonce.fr"
+                }    
+            },
+            "errors": {
+                "emailValid": "Please enter a valid email.",
+                "phoneValid": "Please Enter a Valid Phone Number.",
+                "password": "Please enter your new password",
+                "passwordMatch": "Passwords do not match",
+                "emailUnicity": "This email already exists."
+            },
+            "welcome1": "Welcome aboard ",
+            "welcome2": "Your account has been created successfully. We’ve sent you an activation email to confirm your account.",
+            "welcome3": "Enjoy creating your CODELESS Microservices and let",
+            "us": " us ",
+            "welcome4": "know if there is anything we can help you with.",
+            "btn": "Sign Up",
+            "login": "Login",
+            "account": "Already have an account? "
+        },
+        "reset": {
+            "title": "RESET PASSWORD",
+            "placeholder": {
+                "password": "Password",
+                "confirmPassword": "Confirm Password"
+            },
+            "errors": {
+                "password": "Please enter your new password",
+                "passwordMatch": "Passwords do not match",
+                "notFound": "No user is registered with this email."
+            },
+            "welcome1": "Your password have been successfully submitted. You can now  ",
+            "welcome2": "with your new password.",
+            "btn": "Submit",
+            "signup": "Sign Up",
+            "login": "Login"
+        }
+    },
+    "header": {
+        "settings": "Settings",
+        "logout": "Logout",
+        "welcome": "Welcome,"
+    },
+    "popups": {
+        "faq": {
+            "delete": {
+                "title": "Delete Question",
+                "msg": "Do you really want to delete this question ?"
+            },
+            "add": "Add a new Question",
+            "edit": "Update Question",
+            "placeholder": {
+                "title": "Question title",
+                "question": "Question",
+                "response": "Response of the question"
+            },
+            "errors": {
+                "nullTitle": "Question title must not be empty",
+                "nullQuestion": "Question must not be empty",
+                "nullResponse": "Question response must not be empty"
+            }
+        },
+        "subscription": {
+            "delete": {
+                "title": "Delete Subscription",
+                "msg": "Do you really want to delete this subscription ?"
+            }
+        },
+        "microservice": {
+            "teams": "Teams",
+            "public": "Public",
+            "shared": "Shared with team",
+            "personnal": "Private",
+            "type": "Microservice Type : ",
+            "add": "Add a new Microservice",
+            "edit": "Update Microservice",
+            "details": "Microservice Details",
+            "addSwagger": "Add Swagger",
+            "delete": {
+                "title": "Delete Microservice",
+                "msg": "Do you really want to delete {{ title }} ?"
+            },
+            "placeholder": {
+                "name": "Microservice name",
+                "description": "This is a description for this Microservice"
+            },
+            "errors": {
+
+                "noUsers": "No users are available",
+                "sharedError": "A shared microservice must have at least one team",
+                "typeError": "A Microservice must have at lesat one type",
+                "swaggers": "A Microservice must contains at lesat one swagger",
+                "unicity": "A Microservice with that name already exists",
+                "null": "Microservice name must not be empty",
+                "pattern": "You can use letters, numbers, - and _ only "
+            }
+        },
+        "organization": {
+            "add": "Add a New Organization",
+            "edit": "Update Organization",
+            "details": "Organization Details",
+            "affected" : "Organization Affectation",
+            "affectationDetails": "You have been affected to the organization",
+            "by" : "By",
+            "delete": {
+                "title": "Delete Organization",
+                "msg": "Do you really want to delete {{ name }} ?"
+            },
+            "placeholder": {
+                "name": "Name",
+                "email": "Email",
+                "description": "Description",
+                "address" : "Address",
+                "phone" : "Phone"
+            },
+            "errors": {
+                "unicity": "An Organization with that name already exists",
+                "nullName": "Organization name must not be empty",
+                "nullEmail": "Organization email must not be empty",
+                "pattern": "You can use letters, numbers, - and _ only "
+            }
+        },
+        "member": {
+            "delete": {
+                "title": "Delete Member",
+                "msg": "Do you really want to delete this member ?"
+            },
+            "deleteAdmin": {
+                "title": "You cannot delete this member",
+                "msg": "This member has an admin role in this organization ."
+            }
+        },
+        "team": {
+            "add": "Add a new Team",
+            "edit": "Update Team",
+            "details": "Team Details",
+            "affected" : "Team Affectation",
+            "affectationDetails": "You have been affected to the team",
+            "by" : "By",
+            "delete": {
+                "title": "Delete Team",
+                "msg": "Do you really want to delete this team ?"
+            },
+            "placeholder": {
+                "name": "Team name",
+
+                "description": "This is a description for this Team"
+            },
+            "errors": {
+                "unicity": "A Team with that name already exists",
+                "nullName": "Team name must not be empty",
+
+                "pattern": "You can use letters, numbers, - and _ only "
+            }
+        },
+        "swagger": {
+            "add": "Add a new Swagger",
+            "edit": "Update Swagger",
+            "details": "Swagger Details",
+            "addSwagger": "Add Swagger",
+            "nameSwagger": "Name",
+            "lastVersion": "Last Version",
+            "production": "In production",
+            "delete": {
+                "title": "Delete Swagger",
+                "msg": "Do you really want to delete this swager ?"
+            },
+            "placeholder": {
+                "url": "Swagger URL",
+                "environment": "Environment"
+            },
+            "lastUpdated": "Last Update Date",
+            "compare": {
+                "title": "Compare two Swagger Versions",
+                "error": "You have to check 2 boxes"
+            },
+            "download": {
+                "title": "Download Swagger file",
+                "error": "You have to choose an environement"
+            }
+        },
+        "buttons": {
+            "selectAll": "Organization",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "download": "download",
+            "back": "Back",
+            "next": "Next",
+            "saveAndExit": "Save & Exit",
+            "close": "Close",
+            "add": "Add",
+            "save": "Save",
+            "member": "Member"
+        },
+        "search": {
+            "showTree": "Show Tree",
+            "hideTree": "Hide Tree",
+            "import": "Import File"
+        },
+        "container" : {
+            "noHistory" : {
+                "title" : "No History Available",
+                "msg" : "This environment has not been changed yet !"
+            }
+        }
+    },
+    "actions": {
+        "importSwagger": "Import swaggers",
+        "importFromGit": "Import From Git Repository",
+        "importZipFile": "Import .ZIP File"
+    },
+    "git": {
+        "import": {
+            "error": "Check GIT repo URL and Credentials"
+        },
+        "btn": {
+            "clone": "Clone",
+            "check": "Check Branchs"
+        }
+    },
+    "api": {
+        "definition": "Endpoint Definition",
+        "doc": "Endpoints documentation",
+        "placeholder": {
+            "name": "Name",
+            "http": "HTTP Method",
+            "endpoint": "Endpoint path",
+            "request": "Request Content Type",
+            "response": "Response Content Type",
+            "this": "This is the content of the transformation",
+            "default": "Default Value",
+            "collection": "Collection Name",
+            "fname": "File name in parameters",
+            "selectCollection": "Please select a collection from the database",
+            "uploadFile": "Upload a file",
+            "snippet": "Select a default query"
+        },
+        "qtype": "Query Type",
+        "cancel": "Cancel",
+        "close": "Close",
+        "query": "Query",
+        "fichier": "Files Management",
+        "one": "One",
+        "many": "Many",
+        "in": "In order to manipulate files, retreive or delete, please provide a parameter called '",
+        "id": "id",
+        "htt": "' in the HTTP request with the value of the file id.",
+        "page": "Pageable",
+        "please": "Please provide the following query parameters when you call this Endpoint :",
+        "hold": ": parameter to hold the page number",
+        "per": ": parameter to hold the number of elements per page",
+        "insert": " To insert an object in the database, add it to the HTTP request Body on Endpoint call.",
+        "update": "To update an object in the database, define a query for find operation and add the columns to update in the HTTP request Body on Endpoint call.",
+        "string": "String",
+        "integer": "Integer",
+        "boolean": "Boolean",
+        "char": "Char",
+        "ad": "Add",
+        "name": "Name",
+        "value": "Value",
+        "body": "Body Content",
+        "or": "Or",
+        "n": "Name :",
+        "desc": "Description : ",
+        "summary": "Summary : ",
+        "http": "HTTP Method : ",
+        "prod": "Produces : ",
+        "cons": "Consumes : ",
+        "selected": "Selected File : ",
+        "path": "Path of execution : ",
+        "second": "Secondary Selected File :",
+        "list": "List of parameters : ",
+        "respo": "List of Responses : ",
+        "under": "Under each Http method, the Endpoint path needs to be unique.",
+        "add": "Add Endpoint",
+        "edit": "Edit Endpoint",
+        "addCollection": "Add New Collection",
+        "hideDetails": "Hide Details",
+        "advancedDetails": "Advanced Details",
+        "insertData": "Insert Data",
+        "updateData": "UpdateData",
+        "parameters": "Parameters List",
+        "recap": "Recapitulation",
+        "reqDetails": "Execution Request",
+        "resDetails": "HTTP Request | Response",
+        "file": "File Management",
+        "importedFile": "Fichier importé",
+        "staticRes": "CSS, Images, Media",
+        "returnNumber": "Number of elements to return",
+        "returnElementNumber": "Number of elements to return after executing the requête",
+        "template": "Markup template",
+        "resources": "Select your Markup Template and all resources to inject (CSS, Js, Images,Media...)",
+        "noSelectedFiles": "No Files Selected",
+        "templateStep": "Markup, CSS, Js, Images...",
+        "httpCodes": "HTTP Response Status Codes",
+        "type": "Endpoint Type",
+        "insertUpdate": "Please choose the type of this Endpoint, whether it is a data insertion or an update",
+        "reqBody": "You can define the body of the query to execute",
+        "paramList": "List of parameters",
+        "emptyPath": "Endpoint can't be empty",
+        "copy": "Copy Endpoint URL"
+    },
+    "query-api-modal": {
+        "close": "Close",
+        "file": "File Name",
+        "placeholder": {
+            "name": "Name...",
+            "default": "Default Value..."
+        },
+        "string": "String",
+        "integer": "Integer",
+        "boolean": "Boolean",
+        "reqType": "Request Type",
+        "char": "Char",
+        "name": "Name",
+        "type": "Type",
+        "value": "Value",
+        "confirm": "Confirm"
+    },
+    "reset": {
+        "resetPassword": "Reset Password",
+        "enterPassword": "Please enter your new password",
+        "passwordNotMatch": "Passwords do not match",
+        "resetSuccessReset": "Your password have been successfully submitted. We have sent a confirmation link to your Email and will expire in 24 hours",
+        "submit": "Submit",
+        "signup": "Sign up",
+        "login": "Log in"
+    },
+    "help": {
+        "apiPath": "Set the Endpoint method (ex: GET) and the path (ex: '/users/all')",
+        "collection": "Select a collection from the dropdown list. \n You can use the \"Add New Collection\" button to add a new collection by typing the new collection's name and approve.",
+        "contentTypeReq": "The Content-Type entity header is used to indicate the media type of the resource in the request.",
+        "contentTypeRes": "The Content-Type entity header is used to indicate the media type of the resource in the response.",
+        "resNumber": "Return all the elements in the result array or only the first element.",
+        "fileName": "Set the name of the request parameter to host the file to upload on API call. \n (ex: 'fileToUpload')",
+        "reqType": "This Endpoint can be used to Insert or Update data. \n You need to select one option. \n By default, 'Insert' is selected.",
+        "projection": "Set the fields to return for all matching objects. Only the named properties will be returned.",
+        "query": "You can set the Query to be executed in order to manipulate data. The query needs to respect a specific format. Every field name needs to have a parameter as value that begins with '%'.\n (ex : { \"name\": \"%name\" } and you set a new parameter '%name' in parameters section)",
+        "addParam": "After setting the query body, add your parameters (that start with '%') in this section. \n (ex: {\"field\":\"%val\"}, add a parameter with these properties \n name : val, type : String, and a default value on the need )",
+        "httpStatus": "HTTP defines forty standard status codes that can be used to convey the results of a client’s request. You can override the status codes messages.",
+        "primaryRessource": "Select the file of the transformation.",
+        "secondaryRessource": "Select the static files to inject into the file of the transformation."
+    },
+    "import-modal": {
+        "fromGit": "From Git",
+        "clone": "Clone",
+        "branch": "Branch",
+        "public": "Public",
+        "private": "Private",
+        "username": "Username",
+        "password": "Password"
+    },
+    "swagger": {
+        "placeholder": {
+            "fileUrl": "Swagger File URL"
+        },
+        "errorMsg": "Swagger File can't be imported, please check the URL and try again",
+        "environmentRequired": "Environment is required",
+        "swaggerRequired": "Swagger is required",
+        "import": "Import",
+        "environment": "Environment"
+    },
+    "comingSoon": "Coming soon",
+    "toastr": {
+        "swaggerUpdated": "Swagger has been updated"
+    },
+    "messageBox": {
+        "alert": {
+            "interdit": "Member Access",
+            "inscription": "We invite you to subscribe to benefit from this feature"
+        },
+        "faq": {
+            "delete": "When you delete a question, this immediately happens"
+        },
+        "organization": {
+            "delete": "When you delete an organization, this immediately happens"
+        },
+        "member": {
+            "delete": "When you delete a member, this immediately happens"
+        },
+        "team": {
+            "delete": "When you delete a team, this immediately happens"
+        },
+        "microservice": {
+            "delete": "When you delete a microservice, this immediately happens",
+            "msgDeleteAllVersion": "All versions of swaggers within this microservice are going to be deleted",
+            "msgDeleteAllFiles": "All files related to the versions of this microservice are going to be deleted"
+        },
+        "subscription": {
+            "deleteTitle": "Delete Subscription",
+            "delete": "When you delete a subscription, this immediately happens.",
+            "noNotifications": "You will no longer receive any notifications related to this microservice."
+        },
+        "swagger": {
+            "delete" : "When you delete a swagger, this immediately happens"
+        }
+    },
+    "settings": {
+        "placeholder": {
+            "first": "First Name",
+            "last": "Last Name",
+            "email": "Email",
+            "team": "Team",
+            "current": "Current Password",
+            "new": "New Password",
+            "confirm": "Confirm Password",
+            "showChangeBtn": "Change Password",
+            "hideChangeBtn": "Hide Password Section"
+        },
+        "user": "User Profile",
+        "lock": "lock",
+        "please": "Please enter a valid email.",
+        "phone": "Phone",
+        "ph": "phone",
+        "valid": "Please enter a valid phone number",
+        "home": "Home",
+        "password": "Please enter your current password to update your profile.",
+        "change": "Change Password",
+        "enter": "Please enter your new password",
+        "match": "Passwords do not match.",
+        "thanks": "Thank you",
+        "profile": ", your profile has been updated successfully.",
+        "notvalid": "Your current Password is not valid.",
+        "number": "Please Enter a Valid Phone Number.",
+        "update": "Update Profile",
+        "pwdUpdate": ", your password has been updated successfully.",
+        "unlockBtn": "Unlock for profile update",
+        "confirmBtn": "Confirm",
+        "cancelBtn": "Cancel"
+    },
+    "swaggerModal": {
+        "descOpenApi": "We rely on OpenAPI Specification (formerly Swagger Specification), an API description format for REST APIs, to generate an OpenAPI file which allows you to describe your entire API.",
+        "afterConfig": "After configuring the microservice version by setting all the endpoints definitions, you have several options to validate, execute and share this version.",
+        "inspectorDesc": "Test and validate your endpoints",
+        "inscpectorVerify": "You can use this Swagger Inspector to verify that your APIs work as they should. This inspector should be used to test your Query APIs only.",
+        "inspectorValidate": "If your API definition contains any incoherence, the inspector will outline that error. You can execute any valid API directly from the inspector.",
+        "postmanDesc": "Import API definitions into Postman",
+        "executeLocal": "Test API locally",
+        "executeWays": "You can import your API definitions into Postman in two ways. you can choose to use :",
+        "json": "Json Content",
+        "file": "Swagger File",
+        "jsonStep1": "Copy the Swagger JSON content.",
+        "jsonStep2": "Click on the 'Import' button in the top left corner of Postman UI.",
+        "jsonStep3": "You will see multiple options to import the API doc. Click on the 'Paste Raw Text'.",
+        "jsonStep4": "Paste the JSON format in the text area and click import.",
+        "jsonStep5": "You will see all your API as 'Postman Collection' and can use it from the Postman.",
+        "downloadStep1": "Download the Swagger JSON file.",
+        "downloadStep2": "Click on the 'Import' button in the top left corner of Postman UI.",
+        "downloadStep3": "You will see multiple options to import the API doc. Click on the 'Import File'.",
+        "downloadStep4": "Drag and Drop the Swagger file directly of select the Swagger file from the file System",
+        "downloadStep5": "You will see all your APIs as 'Postman Collection' and can use it from the Postman.",
+        "shareFile": "Share Swagger File",
+        "downloadShare": "Download and share your API Definition",
+        "shareTwoWays": "Grizzly provides two ways for sharing you API definition depending on your needs :",
+        "withDevs": "1 - Share with other Grizzly-API users",
+        "devDesc": "In order to share your work with other users of Grizzly-API plateform you simply download the Swagger file dedicated for developement",
+        "forDev": "Download Swagger For Developement",
+        "withUsers": "2 - Share with final users",
+        "usersDesc": "In order to share your work with final users or clients, please download the Swagger file dedicated for Production",
+        "forProd": "Download Swagger For Production",
+        "click": " click here",
+        "swagFileJson": "Swagger File in JSON",
+        "serverUrl": "Server URL for "
+    },
+    "notifications": {
+        "addedToTeam": "new affectation",
+        "addedToTheTeam": "{{ owner }} has added you to the team",
+        "addedToOrganisation": "Added to team ",
+        "addedToTheOrganisation": " has added you to the organisation: ",
+        "clearAll": "Clear All",
+        "LoadAll": "Load All",
+        "NewNotif": "NEW",
+        "OldNotif": "SEEN",
+        "message": "has changed",
+        "NoNotif": "You have no notifications"
+    },
+    "toaster": {
+        "organization": {
+            "added": "Organization Added",
+            "updated": "Organization Updated",
+            "deleted": "Organization Deleted",
+            "limit": "Limit Reached!",
+            "forbidden": "Only for admin"
+        },
+        "team": {
+
+            "added": "Team Added",
+            "updated": "Team Updated",
+            "deleted": "Team Deleted",
+            "limit": "Limit Reached!"
+        },
+        "member": {
+            "added": "Member Added",
+            "updated": "Member Updated",
+            "deleted": "Member Deleted",
+            "limit": "Limit Reached!"
+        },
+        "microservice": {
+            "added": "Microservice Added",
+            "updated": "Microservice Updated",
+            "deleted": "Microservice Deleted",
+            "limit": "Limit Reached!"
+        },
+        "subscription": {
+            "added": "Subsribed with Success",
+            "updated": "Subscription Updated",
+            "deleted": "Subscription Deleted"
+
+        }
+
+    },
+    "diff": {
+        "invalidTypes": "Swaggers doesn't have the same type",
+        "newEndpoint": "What's New ?",
+        "missingEndpoint": "What's Missing ?",
+        "changedEndpoint": "What's Changed ?",
+        "new": "New Verison",
+        "old": "Old Version",
+        "summary": "Summary",
+        "swaggerDiff": "Swagger differences",
+        "noChanges": "There are no changments",
+        "addedEndpoints": "Added Endpoint(s)",
+        "missingEndpoints": "Missing Endpoint(s)",
+        "changedEndpoints": "Changed Endpoint(s)",
+        "showTree": "Show details tree",
+        "detailsTree": "Details"
+    },
+    "or": "Or",
+    "new": "An endpoint has been added",
+    "missing": "An endpoint has been deleted",
+    "old": "An endpoint has been deleted",
+    "params": "Parameters have been changed",
+    "integrateSuccess" : "Microservice integrated successfully",
+    "integrateError" : "Miroservice name already exists",
+    "editor": {
+        "goto": "Go To Editor"
+    },
+    "estimate" : {
+        "title" : "Estimate of the invoice",
+        "trial" : "You are in the free trial period."
+    },
+    "payment" : {
+        "nopaymentmethod" : "You have no saved payment method.",
+        "nobillingcontact" :  "You have no saved billing contact.",
+        "notechniccontact" :  "You have no saved technical contact.",
+        "addpayment" : "Add Payment Method",
+        "addbillingcontact" : "Add Billing Contact",
+        "addtechniccontact" : "Add Technical Contact",
+        "infos" : "Billing informations",
+        "contact" : "Contact details",
+        "contactMsg" : "The postal address of the technical contact will appear on the invoice.",
+        "question" : "How Would You Like To Pay ?"
+    },
+        "trial" : {
+        "expiredMsg" : "Your trial has expired",
+        "msg1" : "We couldn't log you in because your trial is expired.",
+        "msg2" : "All of your data will be safe for the next days , but no one will be able to log in util your account is upgrated.",
+        "msg3" : "Choose from this 3 plans :",
+        "scalability" : "SCALABILITY",
+        "limitless" : "LIMITLESS",
+        "consulting" : "CONSULTING",
+        "profesionnal" : "PROFESSIONAL",
+        "scalabilityMsg" : "The right offer if you create and modify up to 18 microservices per month",
+        "profesionnalMsg" : "Work with your team on an unlimited number of microservices",
+        "consultingMsg" : "You need experts advice to create your micro-service based architecture",
+        "requestQuote" : "Request a Quote",
+        "requestActivation" : "Request Activation",
+        "limitlessPrice" : "5000 € / Month",
+        "scalabilityPrice" : "290€ per modified microservice / Month"
+    },
+    "offers" : {
+        "price" : "Price ................................................................. ",
+        "plan" : "Plan ............................................................... ",
+        "scalabilityPrice" :"290€ per modified microservice / Month *",
+        "limitlessPrice" : "5000 € / Month"
+
+    },
+    "currentPlan" : "Your current plan is ",
+    "daysLeft" : " days left ",
+    "completeEstimation" : "Show a complete estimate",
+    "invoiceHistory" : "Billing history",
+    "invoiceNumber" : "Invoice number",
+    "billingPeriod" : "Billing period",
+    "amount" : "Amount",
+    "annually" : "Annually",
+    "monthly" : "Monthly",
+    "noInvoices" : "You do not have any invoices available yet",
+    "history" : "View complete history",
+    "billingContactInfos" : "This is the contact that will be used for all billing procedures and monetary operations and this is the contact that will appear in your invoices",
+    "plan" : "Plan",
+    "amountDue" :"Total amount due at",
+    "invoiceContact" : "Contact us for more details on the invoice",
+    "annuallySubscription" : "If you prefer to pay annually, ",
+    "contactUs": "contact us",
+    "includingTax" : " (excluding tax) ",
+    "contactDetails" : "Contact details ",
+    "noContact" : "No contacts are added.",
+    "addContact" : "Add a contact",
+    "expires" : "Expires on ",
+    "edit" : "Edit",
+    "cardErrors" : {
+        "incorrectCvc" : "The security code on your card is incorrect.",
+        "processing" : "An error occurred while processing your card. Please try again later.",
+        "refused" : "Your card has been rejected.",
+        "insufficientFunds"  :"Your card does not have sufficient funds.",
+        "cardNotSupported" : "Your card is not supported.",
+        "invalidYearCardNumber" : "Your card's expiration year has passed.",
+        "invalidMonth" : "Your card's expiration date has passed.",
+        "invalidCardNumber" : "Your card number is not valid."
+
+    },
+    "currentPlanTitle" : "Current offer",
+    "organisationName" : "Organisation Name"
+
+}
