@@ -57,7 +57,7 @@
 
           <div class="divider divider-md"></div>
 
-          <a class="primaryColor" [routerLink]="" *ngIf="!resetPasswordBool" (click)="showResetPassword()"><span
+          <a class="primaryColor" [routerLink]="undefined" *ngIf="!resetPasswordBool" (click)="showResetPassword()"><span
               translate>auth.signin.forgotPass</span></a>
 
           <button mat-raised-button type="submit" color="primary" (click)="login()" class="float-right"
