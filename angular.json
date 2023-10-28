@@ -158,7 +158,6 @@
       }
     }
   },
-  "defaultProject": "grizzly-authorization",
   "cli": {
     "analytics": false
   }

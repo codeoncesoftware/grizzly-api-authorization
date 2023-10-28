@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { MyErrorStateMatcher } from '../errorStateMatcher';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from '../auth.service';
@@ -12,7 +12,7 @@ import { AppTranslateService } from 'src/app/shared/services/app-translate-servi
 })
 export class ResetPasswordComponent implements OnInit {
 
-  resetForm: FormGroup;
+  resetForm: UntypedFormGroup;
   matcher = new MyErrorStateMatcher();
 
   password: string;
@@ -23,7 +23,7 @@ export class ResetPasswordComponent implements OnInit {
   selectedLanguage: string;
   successfulReset = false;
   // tslint:disable-next-line:max-line-length
-  constructor(private formBuilder: FormBuilder, private route: ActivatedRoute, private authService: AuthService, private appTranslateService: AppTranslateService) { }
+  constructor(private formBuilder: UntypedFormBuilder, private route: ActivatedRoute, private authService: AuthService, private appTranslateService: AppTranslateService) { }
 
   ngOnInit() {
 
@@ -41,7 +41,7 @@ export class ResetPasswordComponent implements OnInit {
 
   }
 
-  checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+  checkPasswords(group: UntypedFormGroup) { // here we have the 'passwords' group
     if (group) {
       const pass = group.controls.password.value;
       const confirmPass = group.controls.confirmPassword.value;

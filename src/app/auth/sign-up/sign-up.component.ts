@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { AuthService } from '../auth.service';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { UntypedFormGroup, Validators, UntypedFormBuilder } from '@angular/forms';
 import { User } from 'src/app/shared/models/User';
 import { MyErrorStateMatcher } from '../errorStateMatcher';
 import { AppTranslateService } from 'src/app/shared/services/app-translate-service';
@@ -21,7 +21,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
   error: boolean;
   isFr: boolean;
   selectedLanguage: string;
-  userForm: FormGroup;
+  userForm: UntypedFormGroup;
   matcher = new MyErrorStateMatcher();
 
   countryCode: string;
@@ -32,7 +32,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
 
 
   // tslint:disable-next-line:max-line-length
-  constructor(private router: ActivatedRoute , private authService: AuthService, private formBuilder: FormBuilder, private appTranslateService: AppTranslateService) { }
+  constructor(private router: ActivatedRoute , private authService: AuthService, private formBuilder: UntypedFormBuilder, private appTranslateService: AppTranslateService) { }
 
   ngOnInit() {
     this.router.queryParams.subscribe(param => {
@@ -77,7 +77,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
 
   }
 
-  checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+  checkPasswords(group: UntypedFormGroup) { // here we have the 'passwords' group
     if (group) {
       const pass = group.controls.password.value;
       const confirmPass = group.controls.confirmPassword.value;
